@@ -15,11 +15,11 @@
             "mountPoints": [
                 {
                     "containerPath": "/var/www/myapp",
-                    "sourceVolume": "_"
+                    "sourceVolume": "/home/kairemor/DIC1_KM/NoSQL/Prof/Project"
                 },
                 {
                     "containerPath": "/etc/nginx/conf.d/default.conf",
-                    "sourceVolume": "_Site_Conf"
+                    "sourceVolume": "/home/kairemor/DIC1_KM/NoSQL/Prof/Project/site.conf"
                 }
             ],
             "name": "web",
@@ -31,20 +31,5 @@
             ]
         }
     ],
-    "family": "",
-    "volumes": [
-        {
-            "host": {
-                "sourcePath": "./"
-            },
-            "name": "_"
-        },
-        {
-            "host": {
-                "sourcePath": "./site.conf"
-            },
-            "name": "_Site_Conf"
-        }
-    ]
 }
 
