@@ -4,8 +4,10 @@
 
     class MongoDB{
         function __construct(){
-            $this->db = (new MongoDB\Client)->project;
-        }
+            $this->db = (new MongoDB\Client("mongodb://ugb6g73j585gpzjzfidk:Xix2nhQ3Y6yxLR3jbeI6@bfwljddhhprbyaz-mongodb.services.clever-cloud.com:27017/bfwljddhhprbyaz"))->bfwljddhhprbyaz;
+	    #$this->db = new MongoDB\Driver\Manager("mongodb://localhost:27017"); 
+	    #$this->db = (new MongoDB\Client("mongodb://bfwljddhhprbyaz-mongodb.services.clever-cloud.com:27017", array("username" => "ugb6g73j585gpzjzfidk", "password" => "Xix2nhQ3Y6yxLR3jbeI6")))->bfwljddhhprbyaz;
+	}
         
         public function register($data = []){ 
             extract($data) ; 
