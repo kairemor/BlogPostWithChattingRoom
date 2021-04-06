@@ -10,13 +10,13 @@
         {
           "name": "web-app",
           "host": {
-            "sourcePath": "/home/kairemor/DIC1_KM/NoSQL/Prof/Project/"
+            "sourcePath": "/var/app/current/"
           }
         }
       ],
       "mountPoints": [
         {
-          "sourceVolume": "/home/kairemor/DIC1_KM/NoSQL/Prof/Project/",
+          "sourceVolume": "web-app",
           "containerPath": "/var/www/myapp"
         }
       ]
@@ -27,11 +27,11 @@
       "memory": 128,
       "mountPoints": [
         {
-          "sourceVolume": "/home/kairemor/DIC1_KM/NoSQL/Prof/Project/",
+          "sourceVolume": "web-app",
           "containerPath": "/var/www/myapp"
         },
         {
-          "sourceVolume": "/home/kairemor/DIC1_KM/NoSQL/Prof/Project/site.conf",
+          "sourceVolume": "/var/app/current/site.conf",
           "containerPath": "/etc/nginx/conf.d/default.conf"
         }
       ],
