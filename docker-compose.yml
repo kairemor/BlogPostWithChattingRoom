@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+
+  web:
+    image: nginx:1.17
+    ports:
+      - 80:80
+    volumes:
+      - /home/kairemor/DIC1_KM/NoSQL/Prof/Project/:/var/www/myapp
+      - /home/kairemor/DIC1_KM/NoSQL/Prof/Project/site.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+
+  php:
+    image: kairemor/php-mongodb
+          #command: ["pecl", "install", "mongodb"]
+          #build: .
+    volumes:
+    - /home/kairemor/DIC1_KM/NoSQL/Prof/Project/:/var/www/myapp
+    # - ./php.ini:/usr/local/etc/php/php.ini
+
