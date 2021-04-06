@@ -16,7 +16,7 @@
       ],
       "mountPoints": [
         {
-          "sourceVolume": "web-app",
+          "sourceVolume": "/home/kairemor/DIC1_KM/NoSQL/Prof/Project/",
           "containerPath": "/var/www/myapp"
         }
       ]
@@ -27,7 +27,7 @@
       "memory": 128,
       "mountPoints": [
         {
-          "sourceVolume": "web-app",
+          "sourceVolume": "/home/kairemor/DIC1_KM/NoSQL/Prof/Project/",
           "containerPath": "/var/www/myapp"
         },
         {
