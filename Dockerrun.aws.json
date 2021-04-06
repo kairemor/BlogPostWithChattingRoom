@@ -16,7 +16,7 @@
   ],
   "containerDefinitions": [
     {
-      "essential": true,
+      "essential": false,
       "name": "php",
       "image": "kairemor/php-mongodb",
       "memory": 128,
@@ -31,6 +31,7 @@
       "essential": true,
       "image": "nginx:1.17",
       "memory": 128,
+      "links": ["php"],
       "mountPoints": [
         {
           "sourceVolume": "web-app",
