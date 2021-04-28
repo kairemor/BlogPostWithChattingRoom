@@ -5,7 +5,7 @@ MAINTAINER kairemor <kairemor@gmail.com>
 RUN apt-get update -y
 RUN apt-get install -y nginx
 RUN apt-get install -y autoconf pkg-config libssl-dev
-RUN pecl install mongodb-1.2.2
+RUN pecl install mongodb-1.5.3
 RUN docker-php-ext-install bcmath
 RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
 
